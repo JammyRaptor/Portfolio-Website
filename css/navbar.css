@@ -1,0 +1,234 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
+
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: black;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(113, 61, 161);
+}
+
+.titlebar{
+    position: fixed;
+    background-color: rgb(19, 19, 19);
+    transition: width var(--transition-speed) ease;
+    justify-content: center;
+    top: 0;
+    height: 10rem;
+    width: 100%;
+    z-index: 2;
+    
+}
+
+.titletext{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    
+    font-size: 4rem;
+    padding-left: 0.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width var(--transition-speed) ease;
+    
+    top: 0;
+    z-index: 3;
+
+}
+
+
+.navbar-nav {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.nav-link{
+    display: flex;
+    
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    
+    transition: var(--transition-speed);
+}
+
+
+
+.link-text {
+    display: none;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+
+
+
+.svg-inline--fa{
+    color: blueviolet;
+    transition: var(--transition-speed);
+}
+.svg-inline--fa:hover{
+    color: rgb(174, 43, 226);
+    transition: var(--transition-speed);
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+.logo svg{
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+
+
+
+.logo .link-text{
+    margin: auto;
+}
+
+.nav-item{
+    width: 100%;
+   
+}
+
+
+@media(min-width: 1000px){
+    main {
+        margin-left: 6rem;
+        margin-right: 1rem;
+        margin-top: 7rem;
+        padding: 1rem;
+    }
+    .navbar{
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .titlebar{
+        
+        height: 7rem;
+        
+    }
+   
+    .nav-link:hover{
+        filter: grayscale(0) opacity(1);
+        transition: var(--transition-speed);
+        background: var(--bg-secondary);
+        color: var(--text-secondary);
+    }
+    .navbar:hover {
+        width: 16rem
+    }
+    .navbar:hover .logo svg{
+        transform: rotate(-180deg)
+    }
+    .navbar:hover .link-text{
+        transition: var(--transition-speed);
+        display: inline;
+    }
+    .nav-link{
+        filter: grayscale(100%) opacity(0.7);
+    }
+}
+@media(max-width: 1000px){
+
+
+    main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 8rem;
+        padding: 1rem;
+    }
+    .nav-link{
+        height: 10rem;
+    }
+    .navbar{
+        height: 10rem;
+        width: 10rem;
+        transition: var(--transition-speed) ease;
+    }
+    .nav-item{
+        display: none;
+    }
+    .logo{
+        background: var(--bg-secondary);
+        font-size: 5rem;
+    }
+    
+    .toggle{
+        height: 100%;
+        width: 40rem;
+        transition: var(--transition-speed) ease;
+    }
+    .toggle .logo{
+        
+        background: var(--bg-secondary);
+        
+    }
+    .toggle .nav-item{
+        display: inline;
+    }
+    .toggle .link-text{
+        display: inline;
+        font-size: 2rem;
+    }
+    .toggle .logo svg{
+        transform: rotate(-180deg)
+    
+    }
+    svg{
+        height: 6rem;
+        width: 6rem;
+    }
+    .nav-link{
+        filter: grayscale(50%) opacity(0.9);
+    }
+    .titletext{
+        font-size: 3rem;
+        padding: auto;
+        
+    }
+}

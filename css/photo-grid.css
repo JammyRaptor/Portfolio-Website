@@ -1,0 +1,32 @@
+.photo-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+   
+    grid-auto-rows: 260px;
+}
+
+main h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    
+    font-size: 3rem;
+    padding-left: 0.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+.card-tall{
+    grid-row: span 2/auto;
+}
+.card-wide{
+    grid-column: span 2/auto;
+}
+.card-very-wide{
+    grid-column: span 3/auto;
+    
+}
+

@@ -1,0 +1,95 @@
+#card1{
+    background-image: url(../images/Picture1.jpg);
+}
+#card2{
+    background-image: url(../images/Picture2.jpg);
+}
+#card3{
+    background-image: url(../images/Picture3.jpg);
+}
+#card4{
+    background-image: url(../images/Picture4.jpg);
+}
+#card5{
+    background-image: url(../images/Picture5.jpg);
+    grid-column: span 2/auto;
+}
+#card6{
+    background-image: url(../images/Picture6.jpg);
+}
+#card7{
+    background-image: url(../images/Picture7.jpg);
+}
+#card8{
+    background-image: url(../images/Picture8.jpg);
+}
+#card9{
+    background-image: url(../images/Picture9.jpg);
+}
+#card10{
+    background-image: url(../images/Picture10.jpg);
+}
+#card11{
+    background-image: url(../images/Picture11.jpg);
+}
+#card12{
+    background-image: url(../images/Picture12.jpg);
+    grid-column: span 2/auto;
+}
+#card13{
+    background-image: url(../images/Picture13.jpg);
+    grid-column: span 2/auto;
+}
+#card14{
+    background-image: url(../images/Picture14.jpg);
+    grid-row: span 2/auto;
+}
+#card15{
+    background-image: url(../images/Picture15.jpg);
+    grid-row: span 2/auto;
+}
+#card16{
+    background-image: url(../images/Picture16.jpg);
+    grid-row: span 2/auto;
+    grid-column: span 2/auto;
+}
+#card17{
+    background-image: url(../images/Picture17.jpg);
+    grid-row: span 2/auto;
+}
+#card18{
+    background-image: url(../images/Picture18.jpg);
+    grid-row: span 2/auto;
+}
+#card19{
+    background-image: url(../images/Picture19.jpg);
+    grid-row: span 2/auto;
+}
+#card20{
+    background-image: url(../images/Picture20.jpg);
+    grid-column: span 3/auto;
+}
+#card21{
+    background-image: url(../images/Picture21.jpg);
+    grid-column: span 3/auto;
+}
+#card22{
+    background-image: url(../images/Picture22.jpg);
+    grid-column: span 3/auto;
+}
+#card23{
+    background-image: url(../images/Picture23.jpg);
+    grid-column: span 3/auto;
+}
+#card24{
+    background-image: url(../images/Picture24.jpg);
+    grid-row: span 2/auto;
+}
+#card25{
+    background-image: url(../images/Picture25.jpg);
+    grid-row: span 2/auto;
+    grid-column: span 2/auto;
+}
+#card26{
+    background-image: url(../images/Picture26.png);
+}
